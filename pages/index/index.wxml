@@ -40,4 +40,22 @@
       </view>
     </view>
   </view>
+
+  <view class="welcome-section">
+    <view class="title">无痕聊天</view>
+    <view class="feature-list">
+      <view class="feature-item">
+        <button type="primary" bindtap="createRoom">建立房间</button>
+      </view>
+      <view class="feature-item">
+        <input class="input" type="number" placeholder="房间号" bindinput="onJoinRoomIdInput" value="{{joinRoomId}}" />
+      </view>
+      <view class="feature-item">
+        <input class="input" type="number" placeholder="数字密码" bindinput="onJoinRoomPasswordInput" value="{{joinRoomPassword}}" />
+      </view>
+      <view class="feature-item">
+        <button type="primary" bindtap="joinRoom">进入房间</button>
+      </view>
+    </view>
+  </view>
 </view>
